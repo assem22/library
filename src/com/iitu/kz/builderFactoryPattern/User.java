@@ -38,6 +38,10 @@ public abstract class User {
     }
 
     public void borrow(Book borrowedBook) {
+        if (borrowedBook.getAgeLimit() > this.age) {
+            System.out.println("Sorry, you can't borrow this book");
+            return;
+        }
         this.borrowedBooks.add(borrowedBook);
     }
 

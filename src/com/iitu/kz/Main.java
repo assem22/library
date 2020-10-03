@@ -14,12 +14,8 @@ public class Main {
 
     private static List<User> users = new ArrayList<>();
     private static Library library = Library.getInstance();
-//    private static UserBuilder builder;
 
     public static void main(String[] args) {
-//        PupilBuilder newpupil = new PupilBuilder();
-//        users.add(new Pupil().setId(1).setUsername("Pupil User 1").setAge(13).setMembership(true).getResult());
-//        users.add(newpupil.setId(4).setUsername("asads").setMembership(true).build());
 
         library.setBook(new ForAdults().comedyWithLimitedAge(1,"ComedyBook", 23.23));
         library.setBook(new ForChildren().fantasyWithLimitedAge(2,"FantasyForChildren", 45.87));

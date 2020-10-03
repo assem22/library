@@ -13,6 +13,10 @@ public abstract class Book {
         this.cost = cost;
     }
 
+    public int getAgeLimit() {
+        return ageLimit;
+    }
+
     public double getCost() {
         return cost;
     }
